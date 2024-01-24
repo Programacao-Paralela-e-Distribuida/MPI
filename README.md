@@ -366,3 +366,6 @@ e pergunta o número total de processadores alocados (4 no caso), e quais
 nós foram alocados para o processamento da tarefa. O uso é similar para
 outros gerenciadores de recurso. Mais opções para o comando **qsub**
 podem ser encontradas em <https://www.jlab.org/hpc/PBS/qsub.html>.
+
+Um outro gerenciador alternativo bastante utilizado, mas com filosofia semelhante, 
+é o SLURM, que pode ser encontrado em <https://slurm.schedmd.com/quickstart.html>.
