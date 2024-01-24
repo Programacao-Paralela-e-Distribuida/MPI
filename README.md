@@ -1,6 +1,6 @@
 # MPI
 
-Este respositório apresenta os códigos fontes utilizados no livro de 
+Este repositório apresenta os códigos fontes utilizados no livro de 
 Programação Paralela - Editora Casa do Código - 2022. Adicionalmente 
 apresentamos um texto de apoio para a preparação do ambiente de 
 execução.
