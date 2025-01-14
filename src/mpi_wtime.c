@@ -11,8 +11,7 @@ tempo_inicial = MPI_Wtime();
     } 
  // ...
 tempo_final = MPI_Wtime();
-printf("Foram gastos %3.6f segundos para calcular a = %3.0f com precisão de  %3.
-3e segundos\n",tempo_final-tempo_inicial, a, MPI_Wtick ());
+printf("Foram gastos %3.6f segundos para calcular a = %3.0f com precisão de  %3.3e segundos\n",tempo_final-tempo_inicial, a, MPI_Wtick ());
 MPI_Finalize();
 return(0);
 }
