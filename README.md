@@ -369,3 +369,66 @@ podem ser encontradas em <https://www.jlab.org/hpc/PBS/qsub.html>.
 
 Um outro gerenciador alternativo bastante utilizado, mas com filosofia semelhante, 
 é o SLURM, que pode ser encontrado em <https://slurm.schedmd.com/quickstart.html>.
+
+## Integrando o Jupyter Notebook e o Google Colab em um Ambiente Virtual
+
+Eventualmente, se você quer combinar as vantagens do Jupyter Notebook local (personalização, acesso a dados locais) com a conveniência do Google Colab (recursos na nuvem) utilizando um ambiente virtual. 
+
+**Por que um ambiente virtual?**
+
+* **Isolamento:** Mantém as dependências do seu projeto separadas das outras instalações do Python em seu sistema.
+* **Organização:** Facilita a gestão de diferentes versões de pacotes e ambientes para diferentes projetos.
+
+**Passo a Passo:**
+
+1. **Crie um ambiente virtual:**
+   ```bash
+   python -m venv meu_ambiente
+   ```
+   Substitua `meu_ambiente` pelo nome desejado para o seu ambiente.
+
+2. **Ative o ambiente virtual:**
+     ```bash
+     source meu_ambiente/bin/activate
+     ```
+
+3. **Instale as dependências:**
+   ```bash
+   pip install jupyter jupyter_http_over_ws
+   ```
+
+4. **Habilite a extensão:**
+   ```bash
+   jupyter server extension enable --py jupyter_http_over_ws
+   ```
+
+5. **Inicie o servidor Jupyter:**
+   ```bash
+   jupyter notebook
+   ```
+
+6. **Obtenha a URL:**
+   Copie a URL com a chave completa que irá aparecer no terminal.
+
+7. **Conecte o Colab:**
+   * No Google Colab, clique em "Conectar".
+   * Clique em "Conectar ao ambiente de execução local"
+   * Cole a URL com a chave do seu servidor Jupyter local.
+   * Clique em "Conectar".
+
+**Agora você está conectado ao seu Jupyter Notebook local através do Google Colab dentro do seu ambiente virtual!**
+
+**Dicas Adicionais:**
+
+* **Requirements.txt:** Crie um arquivo `requirements.txt` para listar as dependências do seu projeto e instalá-las facilmente em outros ambientes:
+  ```bash
+  pip freeze > requirements.txt
+  ```
+* **Configurações personalizadas:** Personalize seu Jupyter Notebook criando um arquivo `jupyter_notebook_config.py`.
+* **Segurança:** Tenha cuidado com a segurança ao compartilhar a URL do seu servidor Jupyter.
+
+**Considerações:**
+
+* **Desempenho:** Para projetos grandes ou com muitos dados, o Google Colab pode oferecer mais recursos computacionais.
+* **Flexibilidade:** O Jupyter Notebook local oferece mais flexibilidade para personalizar e configurar o ambiente. 
+
