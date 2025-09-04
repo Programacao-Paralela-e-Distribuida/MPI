@@ -4,7 +4,6 @@
 #define TAM_BUF 100
 #define TAM 10
 
-/* Verificar Código */
 int main (int argc, char** argv) {
 int i, meu_ranque, num_procs;   /* Ranque e número de processos */
 float a [TAM] ;                  /* Valor a ser enviado*/
@@ -30,14 +29,13 @@ MPI_Status estado;
     }
        
     /* Imprime o resultado*/
-
     if (meu_ranque == destino) {
         for (i = 0; i < TAM; i++) 
             printf("Com b[%d] = %3.1f ", i, b[i]);
 	printf("\n");
         fflush(stdout);
     }
-    /* Derruba o MPI */
+    /* Finaliza o MPI */
     MPI_Finalize();
     return 0;
 } 
