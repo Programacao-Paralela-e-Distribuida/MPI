@@ -33,7 +33,7 @@ double inicio, fim;
     Aloc=(double *) malloc(n*sizeof(double));
     b=(double*) malloc(n*sizeof(double));
     cloc=(double*) malloc(sizeof(double));
-
+ 
      if (meu_ranque == 0) {
          printf("Atribuindo valor inicial à matriz A e ao vetor b\n");
          for (j = 0; j < n; j++)
