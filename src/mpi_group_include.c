@@ -14,11 +14,12 @@ MPI_Comm com_novo;
 	MPI_Comm_size(MPI_COMM_WORLD, &num_procs);
 /* Verifica se o número de processos está correto */
 	if (num_procs!= NUM_PROCS) {
-	if (meu_ranque == 0)
+	    if (meu_ranque == 0) {
 		printf("Deve especificar número de processos igual a %d. Terminando.\n", NUM_PROCS);
-		MPI_Finalize();
+		MPI_Abort(MPI_COMM_WORLD, 1);
 		exit (1);
-}
+	    }
+	}
 	envia = meu_ranque;
 /* Extrai o manipulador do grupo original */
 	MPI_Comm_group(MPI_COMM_WORLD, &grupo_orig);
