@@ -2,7 +2,7 @@
 
 Este repositório apresenta os códigos fontes utilizados no livro de 
 Programação Paralela - Editora Casa do Código - 2022. Mais recursos 
-para o livro estão disponíveis na seguinte [página](programacao-paralela-e-distribuida.github.io)
+para o livro estão disponíveis na seguinte [página](programacao-paralela-e-distribuida.github.io).
 A seguir apresentamos um guia para a preparação do ambiente de 
 execução MPI. 
 
