@@ -1,9 +1,10 @@
 # MPI
 
 Este repositório apresenta os códigos fontes utilizados no livro de 
-Programação Paralela - Editora Casa do Código - 2022. Adicionalmente 
-apresentamos um texto de apoio para a preparação do ambiente de 
-execução.
+Programação Paralela - Editora Casa do Código - 2022. Mais recursos 
+para o livro estão disponíveis na seguinte [página](programacao-paralela-e-distribuida.github.io)
+A seguir apresentamos um guia para a preparação do ambiente de 
+execução MPI. 
 
 ## Preparação do ambiente de execução MPI
 
@@ -372,7 +373,8 @@ Um outro gerenciador alternativo bastante utilizado, mas com filosofia semelhant
 
 ## Integrando o Jupyter Notebook e o Google Colab em um Ambiente Virtual
 
-Eventualmente, se você quer combinar as vantagens do Jupyter Notebook local (personalização, acesso a dados locais) com a conveniência do Google Colab (recursos na nuvem) utilizando um ambiente virtual. 
+Eventualmente, se você quer combinar as vantagens do Jupyter Notebook local (personalização, 
+acesso a dados locais) com a conveniência do Google Colab (recursos na nuvem) utilizando um ambiente virtual. 
 
 **Por que um ambiente virtual?**
 
